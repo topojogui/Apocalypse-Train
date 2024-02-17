@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d668866c139adc24a8ca042a7368390e, type: 3}
+  m_Name: Locomotora_Simple
+  m_EditorClassIdentifier: 
+  locomotiveName: Thomas
+  prefab: {fileID: 4392219689844638104, guid: 6380e2b73ceb24942bf8a836adc219bb, type: 3}
+  maxFuelConsumption: 20
+  maxSpeed: 75
+  maxCarryingWeight: 250
