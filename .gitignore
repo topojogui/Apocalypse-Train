@@ -34,7 +34,7 @@
 /ApocalypseTrain/.consulo/
 /ApocalypseTrain/*.csproj
 /ApocalypseTrain/*.unityproj
-#/ApocalypseTrain/*.sln
+/ApocalypseTrain/*.sln
 /ApocalypseTrain/*.suo
 /ApocalypseTrain/*.tmp
 /ApocalypseTrain/*.user
