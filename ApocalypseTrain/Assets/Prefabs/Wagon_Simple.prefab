@@ -116,7 +116,7 @@ GameObject:
   - component: {fileID: 3979064630431567755}
   - component: {fileID: 42680457115910190}
   - component: {fileID: 2842711377102910692}
-  - component: {fileID: 1032818694965913817}
+  - component: {fileID: 6004363173388991419}
   m_Layer: 0
   m_Name: VagonSimple_protot
   m_TagString: floor
@@ -189,8 +189,8 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &1032818694965913817
-MeshCollider:
+--- !u!65 &6004363173388991419
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -207,10 +207,9 @@ MeshCollider:
   m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 5
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 5302568919011541938, guid: 6158d3571f7bc604fb9e497b6d405ccd, type: 3}
+  serializedVersion: 3
+  m_Size: {x: 27.118876, y: 3.8372989, z: 15.295813}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &6511447721888065428
 GameObject:
   m_ObjectHideFlags: 0
@@ -237,7 +236,7 @@ Transform:
   m_GameObject: {fileID: 6511447721888065428}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 13.571, y: 1.637, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:

@@ -20,12 +20,9 @@ public class TrainManagement : MonoBehaviour
     {
         // Instanciar locomotora
         GameObject newLocomotive = Instantiate(locomoStats.prefab, transform.position, transform.rotation);
-        if (spline != null)
-        {
-            newLocomotive.GetComponent<SplineAnimate>().Container = spline;
-
-
-        }
+       
+        newLocomotive.GetComponent<movementTest>().rail = spline;
+        
         newLocomotive.transform.parent = transform;
         lastWagon = newLocomotive; // La locomotora es el último vagón por ahora        
         lastWagonRearPoint = lastWagon.GetComponent<LocomotiveController>().backChainPoint;
@@ -33,7 +30,11 @@ public class TrainManagement : MonoBehaviour
         foreach (Scriptable_WagonStats wagonStats in listaVagones)
         {
             // Instanciar el prefab del vagón actual
-            GameObject newWagon = Instantiate(wagonStats.prefab, lastWagonRearPoint.position, lastWagonRearPoint.rotation);        
+            GameObject newWagon = Instantiate(wagonStats.prefab, lastWagonRearPoint.position, lastWagonRearPoint.rotation);
+
+
+            newWagon.GetComponent<movementTest>().rail = spline;
+            
             // Ajustar la posición del nuevo vagón para que su frontChain coincida con el backChain de la locomotora
             Vector3 displacement = newWagon.GetComponent<WagonChain>().frontChainPoint.position - newWagon.transform.position;
             newWagon.GetComponent<WagonChain>().frontWagon = lastWagon;

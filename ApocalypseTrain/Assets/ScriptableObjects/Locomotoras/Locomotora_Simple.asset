@@ -13,7 +13,8 @@ MonoBehaviour:
   m_Name: Locomotora_Simple
   m_EditorClassIdentifier: 
   locomotiveName: Thomas
-  prefab: {fileID: 4392219689844638104, guid: 6380e2b73ceb24942bf8a836adc219bb, type: 3}
+  prefab: {fileID: 5334488068624879544, guid: d167c2ac1ce10eb49968d86acbfd43c9, type: 3}
+  wagonLength: 0
   maxFuelConsumption: 20
   maxSpeed: 75
   maxCarryingWeight: 250

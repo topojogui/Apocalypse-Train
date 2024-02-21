@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: Wagon_Simple
   m_EditorClassIdentifier: 
   locomotiveName: Wagon
-  prefab: {fileID: 6511447721888065428, guid: 74194199d525fac46a4903d6502896b9, type: 3}
+  prefab: {fileID: 5334488068624879544, guid: b971bec8b4a7df64d8d5f1583042a6a5, type: 3}
   wagonLength: 0

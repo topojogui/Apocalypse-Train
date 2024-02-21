@@ -9,6 +9,13 @@ public class LocomotiveController : MonoBehaviour
     public OvenManager ovenManager;
     public EngineController engineController;
 
+    [Space(15)]
+    [Header("Status")]
+    public int gear = 0;
+    public int direction = 0;
+    public bool emergencyStop = false;
+    
+
     private int currentSpeedLevel;
 
     private void Start()
@@ -26,6 +33,21 @@ public class LocomotiveController : MonoBehaviour
         // Actualiza componentes según sea necesario
         ovenManager.UpdateFuelConsumption(currentSpeedLevel, trainStats.maxSpeed);
         engineController.UpdateSpeed(currentSpeedLevel);
+    }
+
+    public void ChangeGear(int change)
+    {
+        gear = Mathf.Min(3, Mathf.Max(-1, this.gear + change));
+    }
+
+    public void ChangeDirection(int dirChange)
+    {
+        direction = Mathf.Min(1, Mathf.Max(-1, this.direction + dirChange));
+    }
+
+    public void EmergencyStop()
+    {
+        emergencyStop = true;
     }
 }
  
